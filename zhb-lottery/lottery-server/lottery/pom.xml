@@ -14,7 +14,8 @@
     <name>lottery</name>
     <description>DDD抽奖系统</description>
     <properties>
-        <java.version>17</java.version>
+        <java.version>8</java.version>
+        <nacos.version>2.2.1.RELEASE</nacos.version>
     </properties>
     <dependencies>
         <dependency>
@@ -42,6 +43,17 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
+        </dependency>
+        <!--nacos-->
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-config</artifactId>
+            <version>${nacos.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.alibaba.cloud</groupId>
+            <artifactId>spring-cloud-starter-alibaba-nacos-discovery</artifactId>
+            <version>${nacos.version}</version>
         </dependency>
     </dependencies>
 
